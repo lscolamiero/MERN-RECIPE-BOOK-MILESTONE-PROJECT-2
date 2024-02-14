@@ -1,17 +1,5 @@
-const express = require("express");
-const app = express();
-const cors = require("cors");
-const dotenv = require("dotenv");
-dotenv.config();
-const router = express.Router();
+import express from 'express';
+import bodyParser from 'body-parser';
+import mongoose from 'mongoose';
+import cors from 'cors';
 
-app.use(express.json());
-app.use(cors());
-
-module.exports = router;
-
-if (config) {
-  app.listen(process.env.PORT, () => {
-    console.log(`Server Started on port ${process.env.PORT}`);
-  });
-}
