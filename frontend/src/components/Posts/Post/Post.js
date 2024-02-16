@@ -6,17 +6,20 @@ import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import moment from 'moment';
 import useStyles from './styles';
 
-const Post = ({ post }) => {
+const Post = ({ post, setCurrentId }) => {
     const classes = useStyles();
     return (
         <Card className={classes.card}>
             <CardMedia className={classes.media} image={post.selectedFile} title={post.title} />
             <div className={classes.overlay}>
-                <Typography variant='h6'>{post.creator}</Typography>
+                <Typography variant='h6'>by {post.creator}</Typography>
                 <Typography variant='body2'>{moment(post.createdAt).fromNow()}</Typography>
             </div>
             <div className={classes.overlay2}>
-                <Button style={{ color: 'white' }} size='small' onClick={() => { }}>
+                <Button
+                    style={{ color: 'white' }}
+                    size='small'
+                    onClick={() => setCurrentId(post._id)}>
                     <MoreHorizIcon frontSize='default' />
                 </Button>
             </div>
@@ -24,16 +27,19 @@ const Post = ({ post }) => {
                 <Typography variant='body2' color='textSecondary'>{post.tags.map((tag) => `#${tag} `)}</Typography>
             </div>
             <CardContent>
+                <Typography className={classes.title} gutterBottom variant="h4" component="h2">{post.title}</Typography>
+                <Typography className={classes.title} gutterBottom variant="h6">Ingredients</Typography>
                 <Typography className={classes.title} vatiant='h5' gutterBottom>{post.ingredients}</Typography>
+                <Typography className={classes.title} gutterBottom variant="h6">Instructions</Typography>
                 <Typography className={classes.title} vatiant='h5' gutterBottom>{post.instructions}</Typography>
             </CardContent>
             <CardActions className={classes.cardActions}>
-                <Button size='small' color='primary' onClick={() => {}}>
+                <Button size='small' color='primary' onClick={() => { }}>
                     <ThumbUpAltIcon fontSize='small' />
                     Like
                     {post.likeCount}
                 </Button>
-                <Button size='small' color='primary' onClick={() => {}}>
+                <Button size='small' color='primary' onClick={() => { }}>
                     <DeleteIcon fontSize='small' />
                     Delete
                 </Button>
