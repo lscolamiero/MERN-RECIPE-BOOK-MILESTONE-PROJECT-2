@@ -37,19 +37,19 @@
 1. Clone the repository:
 
    ```bash
-   git clone 
+   git clone https://github.com/lscolamiero/MERN-RECIPE-BOOK-MILESTONE-PROJECT-2.git
 
 2. Navigate to the project directory:
 
-       cd  
+       cd MERN-RECIPE-BOOK-MILESTONE-PROJECT-2
 
 3. Navigate to the frontend directory:
      
-       cd 
+       cd frontend
 
 4. Install frontend dependencies:
 
-       npm install 
+       npm install (add in further dependencies for live demo)
 
 5. Return to the project root:
 
@@ -64,12 +64,7 @@
    
        PORT=5000
        MONGODB_URI=mongodb://localhost/recipe-app
-       SECRET=your-secret-key
-
-Replace `your-secret-key` with a secure secret for JWT token generation.
-
-8. Start the development server
-
+       
        
 
 
