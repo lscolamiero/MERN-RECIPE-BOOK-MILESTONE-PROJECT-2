@@ -12,10 +12,10 @@
 
 - ## Screenshots
  
- ![Screenshot1]();
+ <!-- ![Screenshot1](); 
  ![Screenshot2]();
  ![Screenshot3]();
- ![Screenshot4]();
+ ![Screenshot4](); -->
 
 ## Features
 
@@ -91,6 +91,6 @@ The project follows a standard MERN stack folder structure:
 - MongoDB (Mongoose)
 
 
-## Live Demo
+<!-- ## Live Demo -->
 
 
