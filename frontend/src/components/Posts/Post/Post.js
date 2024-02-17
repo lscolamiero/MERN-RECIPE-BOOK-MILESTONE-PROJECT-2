@@ -30,13 +30,13 @@ const Post = ({ post, setCurrentId }) => {
             <CardContent>
                 <Typography className={classes.title} gutterBottom variant="h4" component="h2">{post.title}</Typography>
                 <Typography className={classes.title} gutterBottom variant="h6">Ingredients</Typography>
-                <Typography className={classes.title} vatiant='h5' gutterBottom>{post.ingredients}</Typography>
+                <Typography className={classes.title} vatiant='body2' color='textSecondary'>{post.ingredients}</Typography>
                 <Typography className={classes.title} gutterBottom variant="h6">Instructions</Typography>
-                <Typography className={classes.title} vatiant='h5' gutterBottom>{post.instructions}</Typography>
+                <Typography className={classes.title} vatiant='body2' color='textSecondary'>{post.instructions}</Typography>
             </CardContent>
             <CardActions className={classes.cardActions}>
-                <Button size='small' color='primary' onClick={() => dispatch(likePost(post._id))}><ThumbUpAltIcon fontSize='small' /> Like {post.likeCount} </Button>
-                <Button size='small' color='primary' onClick={() => dispatch(deletePost(post._id))}><DeleteIcon fontSize='small' /> Delete </Button>
+                <Button size='small' color='primary' onClick={() => dispatch(likePost(post._id))}><ThumbUpAltIcon fontSize='small' />&nbsp; Like &nbsp;{post.likeCount} </Button>
+                <Button size='small' color='primary' onClick={() => dispatch(deletePost(post._id))}><DeleteIcon fontSize='small' />&nbsp; Delete </Button>
             </CardActions>
         </Card>
 
