@@ -66,16 +66,17 @@
 
        cd backend
 
+8. Create a `.env` file in the project root and configure your environment variables:
+   
+       PORT=5000
+       MONGODB_URI=mongodb://localhost/recipe-app
+
 9. Install backend dependencies:    
 
        npm install body-parser cors express mongoose nodemon
 
        npm start
 
-9. Create a `.env` file in the project root and configure your environment variables:
-   
-       PORT=5000
-       MONGODB_URI=mongodb://localhost/recipe-app
 
        
 
