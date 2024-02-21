@@ -58,7 +58,7 @@
 
        cd backend
 
-7. Navigate to package.json folder
+7. Navigate to package.json folder:
 
        add the following dependency: "type": "module",
 
@@ -73,11 +73,11 @@
        PORT=5000
        MONGODB_URI=mongodb://localhost/recipe-app
 
-10. Start the development server
+10. Start the development server:
 
        npm start
 
-11. Navigate to the frontend 
+11. Navigate to the frontend: 
 
        npm start
        
