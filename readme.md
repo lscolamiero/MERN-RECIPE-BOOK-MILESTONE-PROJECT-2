@@ -41,45 +41,42 @@
 
        cd MERN-RECIPE-BOOK-MILESTONE-PROJECT-2
 
-3. Navigate to the frontend directory:
-     
-       cd frontend
-
-4. Install frontend dependencies:
-
-       npm i @material-ui/icons --legacy-peer-deps @material-ui/core --legacy-peer-deps npm install
-
-5. Return to the project root:
-
-       cd ..
-       cd ..
-
-6. Navigate to backend folder:
-
-       cd backend
-
-7. Navigate to package.json folder:
+3. Navigate to package.json folder:
 
        add the following dependency: "type": "module",
 
        delete the “test” on the scripts and add the following: "start": "nodemon index.js"
 
-8. Install backend dependencies:    
+4. Navigate to the frontend directory:
+     
+       cd frontend
+
+5. Install frontend dependencies:
+
+       npm i @material-ui/icons --legacy-peer-deps @material-ui/core --legacy-peer-deps @material-ui/lab material-ui-chip-input npm install
+       
+       npm start
+
+6. Return to the project root:
+
+       cd ..
+       cd ..
+
+7. Navigate to backend folder:
+
+       cd backend
+
+9. Install backend dependencies:    
 
        npm install body-parser cors express mongoose nodemon
+
+       npm start
 
 9. Create a `.env` file in the project root and configure your environment variables:
    
        PORT=5000
        MONGODB_URI=mongodb://localhost/recipe-app
 
-10. Start the development server:
-
-       npm start
-
-11. Navigate to the frontend: 
-
-       npm start
        
 
 
