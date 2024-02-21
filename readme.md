@@ -12,10 +12,10 @@
 
 - ## Screenshots
  
- ![Screenshot1](./frontend/src/images/homepage.png);
- ![Screenshot2](./frontend/src/images/createrecipe.png);
- ![Screenshot3](./frontend/src/images/editreceipe.png);
- ![Screenshot4](./frontend/src/images/delete.png); 
+- ![Screenshot1](./frontend/src/images/homepage.png);
+- ![Screenshot2](./frontend/src/images/createrecipe.png);
+- ![Screenshot3](./frontend/src/images/editreceipe.png);
+- ![Screenshot4](./frontend/src/images/delete.png); 
 
 ## Features
 
