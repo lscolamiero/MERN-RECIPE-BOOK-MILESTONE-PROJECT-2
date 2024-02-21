@@ -12,8 +12,8 @@
 
 - ## Screenshots
  
- ![Screenshot1](./frontend/src/images/homepage.png); 
- ![Screenshot2](./frontend/src/images/createrecipe.png);
+ ![Screenshot1](./frontend/src/images/homepage.png);
+ ![Screenshot2](./frontend/src/images/createrecipe.png);;;
  ![Screenshot3](./frontend/src/images/editreceipe.png);
  ![Screenshot4](./frontend/src/images/delete.png); 
 
@@ -93,6 +93,8 @@ The project follows a standard MERN stack folder structure:
 - MongoDB (Mongoose)
 
 
-<!-- ## Live Demo -->
+ ## Live Demo 
+
+ Check out the live demo of the Recipe Sharing Full Stack App [here](https://recipe-book-fe.netlify.app/).
 
 
