@@ -20,7 +20,7 @@
 ## Features
 
 1. **Recipe Management**: Create, edit, and delete your recipes.
-2. **Like Recipes**: Save your favorite recipes for easy access.
+2. **Like Recipes**: Like your favorite recipes. 
 3. **Responsive Design**: Works seamlessly on both desktop and mobile devices.
 
 ## Prerequisites
@@ -59,7 +59,6 @@
 
 6. Return to the project root:
 
-       cd ..
        cd ..
 
 7. Navigate to backend folder:
