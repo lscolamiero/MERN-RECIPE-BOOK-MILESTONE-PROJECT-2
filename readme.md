@@ -47,7 +47,7 @@
 
 4. Install frontend dependencies:
 
-       npm install (add in further dependencies for live demo)
+       npm i @material-ui/icons --legacy-peer-deps @material-ui/core --legacy-peer-deps npm install
 
 5. Return to the project root:
 
