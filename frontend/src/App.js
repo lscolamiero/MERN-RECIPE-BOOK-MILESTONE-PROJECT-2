@@ -7,7 +7,7 @@ import Home from './components/Home/Home';
 import Auth from './components/Auth/Auth';
 
 const App = () => (
-    <GoogleOAuthProvider clientId={`${process.env.NEXT_PUBLIC_GOOGLE_API_TOKEN}`}>
+    <GoogleOAuthProvider clientId={"471569515811-krcftdd1oknug4b7q5qshbui1hei8kqo.apps.googleusercontent.com"}>
     <BrowserRouter>
         <Container maxWidth="lg">
             <Navbar />
