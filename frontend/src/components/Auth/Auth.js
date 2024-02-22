@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Avatar, Button, Paper, Grid, Typography, Container} from '@material-ui/core';
-
 import { GoogleLogin } from '@react-oauth/google';
+import { useDispatch } from 'react-redux';
+import { useHistory } from 'react-router-dom';
 
-//import Icon from './icon';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import useStyles from './styles';
 import Input from './Input';
@@ -13,26 +13,24 @@ const Auth = () => {
     const classes = useStyles();
     const [showPassword, setShowPassword] = useState(false);
     const [isSignup, setIsSignup] = useState(false);
-    
+    const dispatch = useDispatch();
+    const { jwtDecode } = require('jwt-decode');
+    const history = useHistory();
 
     const handleShowPassword = () => {
         setShowPassword((prevShowPassword) => !prevShowPassword)
     };
 
     const handleSubmit = () => {
-
     };
 
     const handleChange = () => {
-
     };
 
     const switchMode = () => {
         setIsSignup((prevIsSignup) => !prevIsSignup);
         handleShowPassword(false)
     };
-
-
 
     return (
         <Container component="main" maxWidth="xs">
@@ -59,8 +57,17 @@ const Auth = () => {
                     </Button>
                     
                     <GoogleLogin
-                        onSuccess= {credentialResponse => {
-                            console.log(credentialResponse, "Success");
+                        onSuccess= {(credentialResponse) => {
+                            const credentialResponseDecoded = jwtDecode(credentialResponse.credential);
+                            const result = credentialResponseDecoded;
+                            const token = credentialResponse.credential;
+                            try {
+                                dispatch ({ type: 'AUTH', data: { result, token } })
+                                history.push('/')
+                            } catch (error) {
+                                console.log('Dispatch Failed');
+                            }
+                            
                         }}
                         onError={() => {
                             console.log('Login Failed');
