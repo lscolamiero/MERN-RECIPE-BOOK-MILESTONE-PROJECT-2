@@ -19,9 +19,10 @@
 
 ## Features
 
-1. **Recipe Management**: Create, edit, and delete your recipes.
-2. **Like Recipes**: Like your favorite recipes. 
-3. **Responsive Design**: Works seamlessly on both desktop and mobile devices.
+1. **User Authentication**: Secure user authentication and registration system.
+2. **Recipe Management**: Create, edit, and delete your recipes.
+3. **Like Recipes**: Like your favorite recipes. 
+4. **Responsive Design**: Works seamlessly on both desktop and mobile devices.
 
 ## Prerequisites
 
@@ -105,6 +106,6 @@ The project follows a standard MERN stack folder structure:
 
  ## Live Demo 
 
- Check out the live demo of the Recipe Sharing Full Stack App [here](https://recipe-book-fe.netlify.app/).
+ Check out the live demo of the Recipe Sharing Full Stack App [here](https://recipe-book-fe2.netlify.app/).
 
 
