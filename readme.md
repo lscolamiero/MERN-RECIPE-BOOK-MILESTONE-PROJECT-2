@@ -16,6 +16,8 @@
 - ![Screenshot2](./frontend/src/images/createrecipe.png);
 - ![Screenshot3](./frontend/src/images/editreceipe.png);
 - ![Screenshot4](./frontend/src/images/delete.png); 
+- ![Screenshot5](./frontend/src/images/signin.png);
+- ![Screenshot6](./frontend/src/images/signup.png);
 
 ## Features
 
